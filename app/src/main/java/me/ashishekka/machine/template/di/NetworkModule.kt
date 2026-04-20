@@ -20,21 +20,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent)
 object NetworkModule {
 
-    /*
-    @Provides
-    @Singleton
-    @Named("AuthInterceptor")
-    fun provideAuthInterceptor(): Interceptor {
-        return Interceptor { chain ->
-            val originalRequest = chain.request()
-            val newRequest = originalRequest.newBuilder()
-                .header("Authorization", "Bearer YOUR_TOKEN_HERE")
-                // .header("x-api-key", "YOUR_API_KEY_HERE")
-                .build()
-            chain.proceed(newRequest)
-        }
-    }
-    */
 
     @Provides
     @Singleton

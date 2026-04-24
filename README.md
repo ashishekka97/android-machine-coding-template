@@ -9,8 +9,10 @@ A high-performance, zero-boilerplate Android template designed for 90-120 minute
 3. **Run the customizer** to set your package and model:
    ```bash
    chmod +x customizer.sh
-   ./customizer.sh com.company.project ModelName ApplicationName
+   # Usage: ./customizer.sh <package.name> <DataModelName> [ApplicationName]
+   ./customizer.sh com.example.pokedex Pokemon Pokedex
    ```
+   *Note: Ensure the package name contains at least one dot (e.g., `com.project` instead of just `project`).*
 4. **Open in Android Studio** and start coding!
 
 ## 🛠 Tech Stack

@@ -15,6 +15,11 @@ PACKAGE=$1
 DATAMODEL=$2
 APPNAME=${3:-MyApplication}
 
+if [[ "$PACKAGE" != *.* ]]; then
+   echo "Error: Package name '$PACKAGE' must contain at least one '.' (dot) character." >&2
+   exit 2
+fi
+
 # Portably handle string replacement (works in bash and zsh)
 SUBDIR=$(echo "$PACKAGE" | tr '.' '/')
 
@@ -44,7 +49,7 @@ do
     echo "Moving files from $OLD_PACKAGE to $PACKAGE"
     mv "$n/java/$OLD_SUBDIR"/* "$n/java/$SUBDIR/"
     # Cleanup empty old directories
-    rm -rf "$n/java/me/ashishekka"
+    rm -rf "$n/java/me/ashishekka/machine/template"
   fi
 done
 

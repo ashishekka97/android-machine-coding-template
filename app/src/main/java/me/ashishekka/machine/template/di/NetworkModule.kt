@@ -17,7 +17,7 @@ import javax.inject.Named
 import javax.inject.Singleton
 
 @Module
-@InstallIn(SingletonComponent)
+@InstallIn(SingletonComponent::class)
 object NetworkModule {
 
 

@@ -117,7 +117,8 @@ dependencies {
     implementation(libs.timber)
 
     // Testing
-    testImplementation(libs.mockk)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
     testImplementation(libs.turbine)
 
     // Paging

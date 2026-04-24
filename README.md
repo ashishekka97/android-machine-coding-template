@@ -24,7 +24,7 @@ A high-performance, zero-boilerplate Android template designed for 90-120 minute
 - **Image Loading:** Coil
 - **Persistence:** Room
 - **Logging:** Timber
-- **Testing:** JUnit4 + MockK + Turbine + Coroutines Test
+- **Testing:** JUnit4 + Mockito + Turbine + Coroutines Test
 
 ## 📦 Key Utilities Included
 - **ConnectivityObserver:** Pre-baked Flow-based internet monitoring.
